@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
   res.write("<h1>Hello from Express.js!</h1>");
   res.end();
 });
-router.get("/another", (req, res) => res.send("a7a 55555555555"));
+router.get("/another", (req, res) => res.json({ route: "ssasa5 55555" }));
 router.post("/", (req, res) => res.json({ postBody: req.body }));
 
 app.use(bodyParser.json());
